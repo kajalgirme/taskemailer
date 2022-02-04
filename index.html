@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Emailer</title>
+	<style type="text/css">
+		body {
+		      margin: 0px !important;
+		      padding: 0px !important;
+		      -webkit-text-size-adjust: 100% !important;
+		      -ms-text-size-adjust: 100% !important;
+		      -webkit-font-smoothing: antialiased !important;
+		      }
+		      /**
+		      * @tab Button
+		      * @section background-Colour
+		      */
+		      .button{
+		      /*@editable*/ background-color: #fff !important;
+		      /*@editable*/ border-radius:3px !important;
+		      /*@editable*/ color: #3b3131a3 !important;
+		      }
+		      /**
+		      * @tab Button_2
+		      * @section background-Colour
+		      */
+		      .button_2{
+		      /*@editable*/ background-color: #f06060 !important;
+		      /*@editable*/ border-radius:3px !important;
+		      /*@editable*/ color: #ffffff !important;
+		      }
+		      img {
+		      border: 0 !important;
+		      outline: none !important;
+		      display: block !important;
+		      }
+		      table {
+		      border-collapse: collapse;
+		      mso-table-lspace: 0px;
+		      mso-table-rspace: 0px;
+		      }
+		      td {
+		      border-collapse: collapse;
+		      mso-line-height-rule: exactly;
+		      }
+		      a, span {
+		      mso-line-height-rule: exactly;
+		      }
+		      .ExternalClass * {
+		      line-height: 100%;
+		      }
+		      .white a {
+		      color: #ffffff;
+		      text-decoration: none;
+		      }
+		      .white1 a {
+		      color: #e6e7e8;
+		      text-decoration: none;
+		      background-color:#333333;
+		      }
+		      .white2 a {
+		      color: #f1f4f5;
+		      text-decoration: none;
+		      }
+		      .black a {
+		      color: #333333;
+		      text-decoration: none;
+		      }
+		      .black3 a {
+		      color: #333333;
+		      text-decoration: none;
+		      }
+		      .black2 a {
+		      color: #282828;
+		      text-decoration: none;
+		      }
+		      .red a {
+		      color: #f06060;
+		      text-decoration: none;
+		      }
+		      .grey a {
+		      color: #808080;
+		      text-decoration: none;
+		      }
+		      .grey1 a {
+		      color: #808080;
+		      text-decoration: none;
+		      }
+		      .applewhiltelink a {
+		      color: inherit !important;
+		      text-decoration: none !important;
+		      }
+		      .video img {
+		      width: 100%;
+		      height: auto;
+		      }
+		      @media only screen and (min-width:481px) and (max-width:599px) {
+		      table[class=wrapper] {
+		      width: 100% !important;
+		      }
+		      table[class=main_table] {
+		      width: 100% !important;
+		      }
+		      td[class=pad_side] {
+		      padding-left: 14px !important;
+		      padding-right: 14px !important;
+		      }
+		      td[class=hide], br[class=hide] {
+		      display: none !important;
+		      }
+		      img[class=full_img] {
+		      width: 100% !important;
+		      height: auto !important;
+		      }
+		      td[class=text], td[class=black], td[class=black2], td[class=red], td[class=white], td[class=white1], td[class=white2], td[class=grey] {
+		      text-align: center !important;
+		      }
+		      td[class=pad_bottom] {
+		      padding-bottom: 20px !important;
+		      }
+		      td[class=pad_top] {
+		      padding-top: 20px !important;
+		      }
+		      td[class=fix_height] {
+		      height: 20px !important;
+		      }
+		      td[class=video] img {
+		      width: 100% !important;
+		      height: auto !important;
+		      }
+		      }
+		      @media only screen and (max-width:480px) {
+		      table[class=wrapper] {
+		      width: 100% !important;
+		      }
+		      table[class=main_table] {
+		      width: 100% !important;
+		      }
+		      td[class=pad_side] {
+		      padding-left: 14px !important;
+		      padding-right: 14px !important;
+		      }
+		      td[class=hide], br[class=hide] {
+		      display: none !important;
+		      }
+		      img[class=full_img] {
+		      width: 100% !important;
+		      height: auto !important;
+		      }
+		      td[class=text], td[class=black], td[class=black2], td[class=red], td[class=white], td[class=white1], td[class=white2], td[class=grey] {
+		      text-align: center !important;
+		      }
+		      td[class=pad_bottom] {
+		      padding-bottom: 20px !important;
+		      }
+		      td[class=pad_top] {
+		      padding-top: 20px !important;
+		      }
+		      td[class=fix_height] {
+		      height: 20px !important;
+		      }
+		      td[class=video] img {
+		      width: 100% !important;
+		      height: auto !important;
+		      }
+		      }
+	</style>
+</head>
+
+<body marginwidth="0" marginheight="0" offset="0" topmargin="0" leftmargin="0" bgcolor="#ffffff">
+	<table width="100%" border="0" align="center" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+		<tr>
+			<!-- Emailer Starts Here-->
+			<td align="center">
+				<table style="table-layout:fixed;" width="650" border="0" cellspacing="0" cellpadding="0" align="center" class="wrapper">
+					<tr>
+						<td class="hide" height="1" style="line-height:0px; font-size:0px;">
+							<img src="images/old/spacer.gif" height="1" width="650" style="display:block; width:650px; min-width:650px;" border="0" />
+						</td>
+					</tr>
+					<!-- Header -->
+					<tr>
+						<td valign="top">
+							<table width="650" border="0" cellspacing="0" cellpadding="0" align="center" class="wrapper" style="table-layout:auto;">
+								<tr>
+									<td>
+										<table width="650" border="0" cellspacing="0" cellpadding="0" align="center" class="wrapper" mc:repeatable mc:variant="Header2">
+											<tr>
+												<td>
+													<table width="650" border="0" cellspacing="0" cellpadding="0" align="center" class="wrapper">
+														<tr>
+															<td width="30" class="hide">&nbsp;</td>
+															<td>
+																<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+																	<tr>
+																		<td height="25" class="fix_height">&nbsp;</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<table width="200" border="0" cellspacing="0" cellpadding="0" align="left" class="wrapper">
+																				<tr>
+																					<td class="black" mc:edit="text_h2" style="font-family:Arial, sans-serif; font-size:12px; line-height:15px; color:#333333;" align="left">
+																					    <img src="images/logo.png" style="height: 50px;">
+																					</td>
+																				</tr>
+																			</table>
+																			<table width="250" border="0" cellspacing="0" cellpadding="0" align="middle" class="wrapper">
+																				<tr>
+																					<td class="red" mc:edit="view" style="font-family:Arial, sans-serif; font-size:12px; line-height:15px; color:#000;" align="middle">
+																					Shop Now at<a href="*|ARCHIVE|*" target="_blank" style="color:#f06060; text-decoration:none;">
+																					    link
+																					</a> | Call on 1800 XYZ 112 <br> Email 
+																					<a href="*|ARCHIVE|*" target="_blank" style="color:#f06060; text-decoration:none;">
+																					    offer@xyz.com
+																					</a>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td height="25" class="fix_height">&nbsp;</td>
+																	</tr>
+																</table>
+															</td>
+															<td width="30" class="hide">&nbsp;</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											
+										</table>
+										
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<!-- Header //-->
+				</table>
+			</td>
+		</tr>
+	</table>
+	<table width="650" border="0" cellspacing="0" cellpadding="0" align="center" class="wrapper" mc:repeatable mc:variant="Full Banner Image" style="table-layout:fixed;">
+		<!--Main Banner-->
+		<tr>
+			<td align="center" valign="top">
+				<img mc:edit="Main_Banner" class="full_img" src="images/hero-img.jpg" width="650" height="345" alt="Main Title Here" style="display:block;border:none;max-width:650px;max-height:345px;" />
+			</td>
+		</tr>
+		<tr>
+			<td height="20" style="line-height:1px;font-size:1px;">&nbsp;</td>
+		</tr>
+	</table>
+	<table width="650" border="0" cellspacing="0" cellpadding="0" align="center" class="wrapper" mc:repeatable mc:variant="Title + Sub title Section" style="table-layout:fixed;">
+		<tr>
+			<td width="30" class="hide">&nbsp;</td>
+			<td class="pad_side">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="wrapper">
+					
+					<tr>
+						<td class="black" mc:edit="Main_Title1" align="center" valign="top" style="font-family:Arial, sans-serif;font-size:24px;line-height:32px;color:#3333337a;">
+						Apply exclusive Student </td>
+					</tr>
+					<tr>
+						<td class="black" mc:edit="Main_Title1" align="center" valign="top" style="font-family:Arial, sans-serif;font-size:24px;line-height:32px;color:#3333337a;">
+						coupon codes at checkout: </td>
+					</tr>
+					<tr>
+						<td class="black" mc:edit="Main_Title1" align="center" valign="top" style="font-family:Arial, sans-serif;font-size:24px;line-height:32px;color:#3333337a;">
+						Product1 | <b>SALE20% </b></td>
+					</tr>
+					<tr>
+						<td class="black" mc:edit="Main_Title1" align="center" valign="top" style="font-family:Arial, sans-serif;font-size:24px;line-height:32px;color:#3333337a;">
+						Product2 | <b>SALE16% </b></td>
+					</tr>
+					<tr>
+						<td class="black" mc:edit="Main_Title1" align="center" valign="top" style="font-family:Arial, sans-serif;font-size:24px;line-height:32px;color:#3333337a;">
+						Product3 | <b>SALE15% </b></td>
+					</tr>
+                    
+					<tr>
+						<td height="13" style="line-height:1px;font-size:1px;">&nbsp;</td>
+					</tr>
+					
+					<tr>
+						<td height="20" style="line-height:1px;font-size:1px;" class="fix_height">&nbsp;</td>
+					</tr>
+				</table>
+			</td>
+			<td width="30" class="hide">&nbsp;</td>
+		</tr>
+	</table>
+	
+	<table width="650" border="0" align="center" cellpadding="0" class="wrapper" cellspacing="0" style="table-layout:fixed" mc:repeatable mc:variant="3 Column With IMAGE + TITLE + DESC + READ MORE">
+		<tr>
+			<td class="pad_side">
+				<table width="650" border="0" cellspacing="0" cellpadding="0" class="wrapper">
+					<tr>
+						<td width="45" class="hide">&nbsp;</td>
+						<td valign="top">
+							<table width="366" border="0" align="left" cellpadding="0" cellspacing="0" class="wrapper">
+								<tr>
+									<td>
+										<table width="170" border="0" align="left" cellpadding="0" cellspacing="0" class="wrapper">
+											<tr>
+												<td>
+													<table width="170" border="0" align="center" cellpadding="0" cellspacing="0" class="wrapper">
+														<tr>
+															<td height="43"  class="button" mc:edit="btn_3" align="center" style="border: 2px solid #8080809e;font-family:Arial, sans-serif; font-size:16px; line-height:18px; color:#ffffff; border-radius:3px;" bgcolor="#d45656">
+															<a href="#" target="_blank" style="text-decoration:none; color:#15141485 ;" class="button">&nbsp;&nbsp;&nbsp;Product3&nbsp;&nbsp;&nbsp;</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+										<table width="170" border="0" align="right" cellpadding="0" cellspacing="0" class="wrapper">
+											<tr>
+												<td valign="top">
+													<table width="170" border="0" align="center" cellpadding="0" cellspacing="0" class="wrapper">
+														<tr>
+															<td height="43"  class="button" mc:edit="btn_3" align="center" style="border: 2px solid #8080809e;font-family:Arial, sans-serif; font-size:16px; line-height:18px; color:#ffffff; border-radius:3px;" bgcolor="#d45656">
+															<a href="#" target="_blank" style="text-decoration:none; color:#15141485 ;" class="button">&nbsp;&nbsp;&nbsp;Product2&nbsp;&nbsp;&nbsp;</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<table width="170" border="0" align="right" cellpadding="0" cellspacing="0" class="wrapper">
+								<tr>
+									<td>
+										<table width="170" border="0" align="center" cellpadding="0" cellspacing="0" class="wrapper">
+											<tr>
+												<td height="43"  class="button" mc:edit="btn_3" align="center" style="border: 2px solid #8080809e;font-family:Arial, sans-serif; font-size:16px; line-height:18px; color:#ffffff; border-radius:3px;" bgcolor="#d45656">
+												<a href="#" target="_blank" style="text-decoration:none; color:#15141485 ;" class="button">&nbsp;&nbsp;&nbsp;Product1&nbsp;&nbsp;&nbsp;</a>
+												</td>
+											</tr>
+											<tr>
+												<td height="28" class="fix_height">&nbsp;</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td width="45" class="hide">&nbsp;</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	
+	<table width="650" style="table-layout:fixed" border="0" align="center" cellpadding="0" cellspacing="0" class="wrapper" mc:repeatable="" mc:variant="Right IMAGE + Left(TITLE + DESC + CTA) with Red BG">
+		<tbody>
+			<tr>
+				<td bgcolor="">
+					<table width="650" border="0" bgcolor="#fff" cellspacing="0" cellpadding="0" class="wrapper">
+						<tbody>
+							<tr>
+								<td align="left" bgcolor="#fff">
+									<table width="324" border="0" align="right" cellpadding="0" cellspacing="0" class="wrapper" style="border:none; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse;">
+										<tbody>
+											<tr>
+												<td class="pad_top" align="center" bgcolor="#fff" style="border:none; mso-border-right-alt:solid #ffffff .5pt; border-collapse:collapse;">
+													<a href="#" target="_blank">
+														<img src="images/product1.png" width="324" height="200" class="full_img" mc:edit="324_images" alt="img_324X312" style="display:block; max-width:324px;" border="0">
+													</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<table width="300" border="0" align="left" cellpadding="0" cellspacing="0" class="wrapper" bgcolor="#fff">
+										<tbody>
+											<tr>
+												<td valign="top">
+													<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+														<tbody>
+															<tr>
+																
+																<td class="pad_side">
+																	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																		<tbody>
+																			<tr>
+																				<td height="40" class="fix_height">&nbsp;</td>
+																			</tr>
+																			<tr>
+																				<td class="white" mc:edit="text_1" align="center" style="font-family:Arial, sans-serif; font-size:20px; line-height:22px; color:#00000073; font-weight: 500;">
+																					PRODUCT1 FROM ONLY<br>
+																					£679 USING CODE<br>
+																					SALE20
+																				</td>
+																			</tr>
+																			<tr>
+																				<td height="10" style="line-height:0px; font-size:0px;">&nbsp;</td>
+																			</tr>
+																			<tr>
+																				<td class="white" align="center" mc:edit="para_1" style="font-family:Arial, sans-serif; font-size:13px; line-height:20px; color:#00000073;">
+																				Product1</td>
+																			</tr>
+																			
+																			<tr>
+																				<td height="10" class="fix_height">&nbsp;</td>
+																			</tr>
+																			<tr mc:hideable="">
+																				<td height="43" class="pad_bottom">
+																					<table border="0" align="center" cellpadding="0" cellspacing="0" align="center" class="wrapper">
+																						<tbody>
+																							<tr>
+																								<td>
+																									<table border="0" align="center" cellpadding="0" cellspacing="0">
+																										<tbody>
+																											<tr>
+																												<td height="43" class="button" mc:edit="btn_1" align="center" style="border: 2px solid #80808096;font-family:Arial, sans-serif; font-size:16px; line-height:18px; color:#ffffff; border-radius:3px;" bgcolor="#d45656">
+																												<a href="#" target="_blank" style="text-decoration:none; color:#ffffff;" class="button">
+																												&nbsp;&nbsp;&nbsp;Shop Now&nbsp;&nbsp;&nbsp;</a>
+																												</td>
+																											</tr>
+																										</tbody>
+																									</table>
+																								</td>
+																							</tr>
+																						</tbody>
+																					</table>
+																				</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td height="70" class="fix_height">&nbsp;</td>
+			</tr>
+		</tbody>
+	</table>
+	
+    <table width="650" style="table-layout:fixed" border="0" align="center" cellpadding="0" cellspacing="0" class="wrapper" mc:repeatable="" mc:variant="Right IMAGE + Left(TITLE + DESC + CTA) with Red BG">
+		<tbody>
+			<tr>
+				<td bgcolor="">
+					<table width="650" border="0" bgcolor="#fff" cellspacing="0" cellpadding="0" class="wrapper">
+						<tbody>
+							<tr>
+								<td align="left" bgcolor="#fff">
+									<table width="324" border="0" align="left" cellpadding="0" cellspacing="0" class="wrapper" style="border:none; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse;">
+										<tbody>
+											<tr>
+												<td class="pad_top" align="center" bgcolor="#fff" style="border:none; mso-border-right-alt:solid #ffffff .5pt; border-collapse:collapse;">
+													<a href="#" target="_blank">
+														<img src="images/product5.png" width="324" height="250" class="full_img" mc:edit="324_images" alt="img_324X312" style="display:block; max-width:324px;" border="0">
+													</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<table width="300" border="0" align="right" cellpadding="0" cellspacing="0" class="wrapper" bgcolor="#fff">
+										<tbody>
+											<tr>
+												<td valign="top">
+													<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+														<tbody>
+															<tr>
+																
+																<td class="pad_side">
+																	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																		<tbody>
+																			<tr>
+																				<td height="40" class="fix_height">&nbsp;</td>
+																			</tr>
+																			<tr>
+																				<td class="white" mc:edit="text_1" align="center" style="font-family:Arial, sans-serif; font-size:20px; line-height:22px; color:#00000073; font-weight: 500;">
+																					PRODUCT2 SAVE OVER<br>
+																					£645 USING CODE<br>
+																					SALE16
+																				</td>
+																			</tr>
+																			<tr>
+																				<td height="10" style="line-height:0px; font-size:0px;">&nbsp;</td>
+																			</tr>
+																			<tr>
+																				<td class="white" align="center" mc:edit="para_1" style="font-family:Arial, sans-serif; font-size:13px; line-height:20px; color:#00000073;">
+																				Product2</td>
+																			</tr>
+																			
+																			<tr>
+																				<td height="10" class="fix_height">&nbsp;</td>
+																			</tr>
+																			<tr mc:hideable="">
+																				<td height="43" class="pad_bottom">
+																					<table border="0" align="center" cellpadding="0" cellspacing="0" align="center" class="wrapper">
+																						<tbody>
+																							<tr>
+																								<td>
+																									<table border="0" align="center" cellpadding="0" cellspacing="0">
+																										<tbody>
+																											<tr>
+																												<td height="43" class="button" mc:edit="btn_1" align="center" style="border: 2px solid #80808096;font-family:Arial, sans-serif; font-size:16px; line-height:18px; color:#ffffff; border-radius:3px;" bgcolor="#d45656">
+																												<a href="#" target="_blank" style="text-decoration:none; color:#ffffff;" class="button">
+																												&nbsp;&nbsp;&nbsp;Shop Now&nbsp;&nbsp;&nbsp;</a>
+																												</td>
+																											</tr>
+																										</tbody>
+																									</table>
+																								</td>
+																							</tr>
+																						</tbody>
+																					</table>
+																				</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td height="10" class="fix_height">&nbsp;</td>
+			</tr>
+		</tbody>
+	</table>
+
+    <table width="650" style="table-layout:fixed" border="0" align="center" cellpadding="0" cellspacing="0" class="wrapper" mc:repeatable="" mc:variant="Right IMAGE + Left(TITLE + DESC + CTA) with Red BG">
+		<tbody>
+			<tr>
+				<td bgcolor="">
+					<table width="650" border="0" bgcolor="#fff" cellspacing="0" cellpadding="0" class="wrapper">
+						<tbody>
+							<tr>
+								<td align="left" bgcolor="#fff">
+									<table width="324" border="0" align="right" cellpadding="0" cellspacing="0" class="wrapper" style="border:none; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse;">
+										<tbody>
+											<tr>
+												<td class="pad_top" align="center" bgcolor="#fff" style="border:none; mso-border-right-alt:solid #ffffff .5pt; border-collapse:collapse;">
+													<a href="#" target="_blank">
+														<img src="images/product5.png" width="324" height="250" class="full_img" mc:edit="324_images" alt="img_324X312" style="display:block; width:350px;" border="0">
+													</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<table width="300" border="0" align="left" cellpadding="0" cellspacing="0" class="wrapper" bgcolor="#fff">
+										<tbody>
+											<tr>
+												<td valign="top">
+													<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+														<tbody>
+															<tr>
+																
+																<td class="pad_side">
+																	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																		<tbody>
+																			<tr>
+																				<td height="40" class="fix_height">&nbsp;</td>
+																			</tr>
+																			<tr>
+																				<td class="white" mc:edit="text_1" align="center" style="font-family:Arial, sans-serif; font-size:20px; line-height:28px; color:#00000073; font-weight: 500;">
+																					PRODUCT3 FROM ONLY<br>
+																					£279 USING CODE<br>
+																					SALE15
+																					
+																				</td>
+																			</tr>
+																			<tr>
+																				<td height="10" style="line-height:0px; font-size:0px;">&nbsp;</td>
+																			</tr>
+																			<tr>
+																				<td class="white" align="center" mc:edit="para_1" style="font-family:Arial, sans-serif; font-size:13px; line-height:28px; color:#00000073;">
+																				Product3</td>
+																			</tr>
+																			
+																			<tr>
+																				<td height="10" class="fix_height">&nbsp;</td>
+																			</tr>
+																			<tr mc:hideable="">
+																				<td height="43" class="pad_bottom">
+																					<table border="0" align="center" cellpadding="0" cellspacing="0" align="center" class="wrapper">
+																						<tbody>
+																							<tr>
+																								<td>
+																									<table border="0" align="center" cellpadding="0" cellspacing="0">
+																										<tbody>
+																											<tr>
+																												<td height="43" class="button" mc:edit="btn_1" align="center" style="border: 2px solid #80808096;font-family:Arial, sans-serif; font-size:16px; line-height:18px; color:#ffffff; border-radius:3px;" bgcolor="#d45656">
+																												<a href="#" target="_blank" style="text-decoration:none; color:#ffffff;" class="button">
+																												&nbsp;&nbsp;&nbsp;Shop Now&nbsp;&nbsp;&nbsp;</a>
+																												</td>
+																											</tr>
+																										</tbody>
+																									</table>
+																								</td>
+																							</tr>
+																						</tbody>
+																					</table>
+																				</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td height="10" class="fix_height">&nbsp;</td>
+			</tr>
+		</tbody>
+	</table>
+ 
+    <table width="650" style="table-layout:fixed" border="0" align="center" cellpadding="0" cellspacing="0" class="wrapper" mc:repeatable="" mc:variant="Right IMAGE + Left(TITLE + DESC + CTA) with Red BG">
+		<tbody>
+			<tr>
+				<td bgcolor="">
+					<table width="650" border="0" bgcolor="#fff" cellspacing="0" cellpadding="0" class="wrapper">
+						<tbody>
+							<tr>
+								<td align="left" bgcolor="#fff">
+									<table width="324" border="0" align="left" cellpadding="0" cellspacing="0" class="wrapper" style="border:none; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse;">
+										<tbody>
+											<tr>
+												<td class="pad_top" align="center" bgcolor="#fff" style="border:none; mso-border-right-alt:solid #ffffff .5pt; border-collapse:collapse;">
+													<a href="#" target="_blank">
+														<img src="images/product4.png" width="324" height="330" class="full_img" mc:edit="324_images" alt="img_324X312" style="display:block; width:350px;" border="0">
+													</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<table width="300" border="0" align="right" cellpadding="0" cellspacing="0" class="wrapper" bgcolor="#fff">
+										<tbody>
+											<tr>
+												<td valign="top">
+													<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+														<tbody>
+															<tr>
+																
+																<td class="pad_side">
+																	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																		<tbody>
+																			<tr>
+																				<td height="40" class="fix_height">&nbsp;</td>
+																			</tr>
+																			<tr>
+																			    <tr>
+																					<td height="30" style="line-height:0px; font-size:0px;">&nbsp;</td>
+																				</tr>
+																				<td class="white" mc:edit="text_1" align="center" style="font-family:Arial, sans-serif; font-size:20px; line-height:28px; color:#00000073; font-weight: 500;">
+																					SAVE UP TO 40% ON<br>
+                                                                                    THE LATEST RANGE
+																					
+																				</td>
+																			</tr>
+																			<tr>
+																				<td height="10" style="line-height:0px; font-size:0px;">&nbsp;</td>
+																			</tr>
+																			<tr>
+																				<td class="white" align="center" mc:edit="para_1" style="font-family:Arial, sans-serif; font-size:13px; line-height:20px; color:#00000073;">
+																				Product Range</td>
+																			</tr>
+																			
+																			<tr>
+																				<td height="10" class="fix_height">&nbsp;</td>
+																			</tr>
+																			<tr mc:hideable="">
+																				<td height="43" class="pad_bottom">
+																					<table border="0" align="center" cellpadding="0" cellspacing="0" align="center" class="wrapper">
+																						<tbody>
+																							<tr>
+																								<td>
+																									<table border="0" align="center" cellpadding="0" cellspacing="0">
+																										<tbody>
+																											<tr>
+																												<td height="43" class="button" mc:edit="btn_1" align="center" style="border: 2px solid #80808096;font-family:Arial, sans-serif; font-size:16px; line-height:18px; color:#ffffff; border-radius:3px;" bgcolor="#d45656">
+																												<a href="#" target="_blank" style="text-decoration:none; color:#ffffff;" class="button">
+																												&nbsp;&nbsp;&nbsp;Shop Now&nbsp;&nbsp;&nbsp;</a>
+																												</td>
+																											</tr>
+																										</tbody>
+																									</table>
+																								</td>
+																							</tr>
+																						</tbody>
+																					</table>
+																				</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td height="20" class="fix_height">&nbsp;</td>
+			</tr>
+		</tbody>
+	</table>
+
+    <table width="650" border="0" cellspacing="0" cellpadding="0" align="center" class="wrapper" mc:repeatable mc:variant="Red Background with DESC" style="table-layout:fixed;">
+		<tr>
+			<td align="center" valign="top">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#968c8c">
+					<tr>
+						<td width="30" class="hide">&nbsp;</td>
+						<td align="center" valign="top" class="pad_side">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+								<tr>
+									<td height="1" class="fix_height">&nbsp;</td>
+								</tr>
+								
+								<tr>
+									<td class="white" mc:edit="SECTION2_Semi-Title" align="center" valign="top" style="font-family:Arial, sans-serif;font-size:13px; letter-spacing:1px; line-height:22px;color:#ffffff;background-color:#968c8c;">
+										Shop Now at <a href="">abc.co.in</a> | Call on 1800 XYZ 4961<br>
+										Email <a href="">XYZ@abc.co</a>
+								   </td>
+								</tr>
+								<tr>
+									<td height="0.5" class="fix_height">&nbsp;</td>
+								</tr>
+							</table>
+						</td>
+						<td width="10" class="hide">&nbsp;</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td height="60" class="fix_height">&nbsp;</td>
+		</tr>
+	</table>
+
+    <table width="650" style="table-layout:fixed" border="0" align="center" cellpadding="0" cellspacing="0" class="wrapper" mc:repeatable="" mc:variant="Right IMAGE + Left(TITLE + DESC + CTA) with Red BG">
+		<tbody>
+			<tr>
+				<td bgcolor="">
+					<table width="650" border="0" bgcolor="#fff" cellspacing="0" cellpadding="0" class="wrapper">
+						<tbody>
+							<tr>
+								<td align="left" bgcolor="#fff">
+									<table width="324" border="0" align="left" cellpadding="0" cellspacing="0" class="wrapper" style="border:none; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse;">
+										<tbody>
+											<tr>
+												<td class="pad_top" align="center" bgcolor="#fff" style="border:none; mso-border-right-alt:solid #ffffff .5pt; border-collapse:collapse;">
+													<a href="#" target="_blank">
+														<img src="images/product5.png" width="324" height="250" class="full_img" mc:edit="324_images" alt="img_324X312" style="display:block; max-width:324px;" border="0">
+													</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<table width="300" border="0" align="right" cellpadding="0" cellspacing="0" class="wrapper" bgcolor="#fff">
+										<tbody>
+											<tr>
+												<td valign="top">
+													<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+														<tbody>
+															<tr>
+																<td class="pad_side">
+																	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																		<tbody>
+																			<tr>
+																				<td height="60" class="fix_height">&nbsp;</td>
+																			</tr>
+																			<tr>
+																				<td class="white" mc:edit="text_1" align="left" style="font-family:Arial, sans-serif; font-size:16px; line-height:22px; color:#00000073; font-weight: 500;">
+																					Spread the cost over 12 Months with<br>
+                                                                                    PayPal Credit. Ts&Cs Apply
+																				</td>
+																			</tr>
+																			<tr>
+																				<td height="10" style="line-height:0px; font-size:0px;">&nbsp;</td>
+																			</tr>
+																			<tr>
+																				<td height="10" class="fix_height">&nbsp;</td>
+																			</tr>
+																			<tr mc:hideable="">
+																				<td height="43" class="pad_bottom">
+																					<table border="0" align="left" cellpadding="0" cellspacing="0" align="center" class="wrapper">
+																						<tbody>
+																							<tr>
+																								<td>
+																									<table border="0" align="center" cellpadding="0" cellspacing="0">
+																										<tbody>
+																											<tr>
+																												<td height="43" class="button" mc:edit="btn_1" align="center" style="border: 2.5px solid #80808096;font-family:Arial, sans-serif; font-size:16px; line-height:18px; color:#ffffff; border-radius:3px;" bgcolor="#d45656">
+																												<a href="#" target="_blank" style="text-decoration:none; color:#ffffff;font-weight: 600" class="button">
+																												&nbsp;&nbsp;&nbsp;Learn More&nbsp;&nbsp;&nbsp;</a>
+																												</td>
+																											</tr>
+																										</tbody>
+																									</table>
+																								</td>
+																							</tr>
+																						</tbody>
+																					</table>
+																				</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td height="10" class="fix_height">&nbsp;</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<table width="650" border="0" cellspacing="0" cellpadding="0" class="wrapper" align="center" mc:repeatable mc:variant="Right IMAGE + Left(TITLE + DESC + READ MORE)" style="table-layout:fixed;">
+		<tr>
+			<td class="pad_side">
+				<table width="230" border="0" cellspacing="0" cellpadding="0" align="right" class="wrapper">
+					<tr>
+						<td align="center" valign="top">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+								<tr>
+									<td align="center" valign="top">
+										<img mc:edit="PRODUCT5_IMG" src="images/DAS-Learn-Page-CVM.png" width="185" height="150" alt="img_185X240" style="display:block;border:none;width:120px;" />
+									</td>
+								</tr>
+								<tr>
+									<td height="40" style="line-height:1px;font-size:1px;" class="fix_height">&nbsp;</td>
+								</tr>
+							</table>
+						</td>
+						<td width="45" class="hide">&nbsp;</td>
+					</tr>
+				</table>
+				<table width="375" border="0" cellspacing="0" cellpadding="0" align="left" class="wrapper">
+					<tr>
+						<td width="45" class="hide">&nbsp;</td>
+						<td align="left" valign="top">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								
+								<tr>
+									<td height="60" style="line-height:1px;font-size:1px;">&nbsp;</td>
+								</tr>
+								<tr>
+									<td mc:edit="PRODUCT6_Description" class="grey" align="left" valign="top" style="font-family:Arial, sans-serif;font-size:15px;line-height:20px;color:#000000ba;">
+										Use your exclusive coupon code to<br>
+										save on hundreds of Product1,<br>
+										product2, Product3. Scan the QR code<br>
+										to get your discount.
+									</td>
+								</tr>
+								<tr>
+									<td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+								</tr>
+								
+								<tr>
+									<td class="fix_height" height="4" style="line-height:1px;font-size:1px;">&nbsp;</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	
+	<table width="650" border="0" align="center" cellpadding="0" class="wrapper" cellspacing="0" style="table-layout:fixed" mc:repeatable mc:variant="3 Column With IMAGE + TITLE + DESC + READ MORE">
+		<tr>
+			<td class="pad_side">
+				<table width="650" border="0" cellspacing="0" cellpadding="0" class="wrapper">
+					<tr>
+						<td width="45" class="hide">&nbsp;</td>
+						<td valign="top">
+							<table width="366" border="0" align="left" cellpadding="0" cellspacing="0" class="wrapper">
+								<tr>
+									<td>
+										<table width="170" border="0" align="left" cellpadding="0" cellspacing="0" class="wrapper">
+											<tr>
+												<td>
+													<table width="170" border="0" align="center" cellpadding="0" cellspacing="0" class="wrapper">
+														<tr>
+															<td height="43"  class="button" mc:edit="btn_3" align="center" style="border: 2px solid #8080809e;font-family:Arial, sans-serif; font-size:16px; line-height:18px; color:#ffffff; border-radius:3px;" bgcolor="#d45656">
+															<a href="#" target="_blank" style="text-decoration:none; color:#15141485 ;" class="button">&nbsp;&nbsp;&nbsp; Product1 Deals &nbsp;&nbsp;&nbsp;</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+										<table width="170" border="0" align="right" cellpadding="0" cellspacing="0" class="wrapper">
+											<tr>
+												<td valign="top">
+													<table width="170" border="0" align="center" cellpadding="0" cellspacing="0" class="wrapper">
+														<tr>
+															<td height="43"  class="button" mc:edit="btn_3" align="center" style="border: 2px solid #8080809e;font-family:Arial, sans-serif; font-size:16px; line-height:18px; color:#ffffff; border-radius:3px;" bgcolor="#d45656">
+															<a href="#" target="_blank" style="text-decoration:none; color:#15141485 ;" class="button">&nbsp;&nbsp;&nbsp;Product2 Deals &nbsp;&nbsp;&nbsp;</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<table width="170" border="0" align="right" cellpadding="0" cellspacing="0" class="wrapper">
+								<tr>
+									<td>
+										<table width="170" border="0" align="center" cellpadding="0" cellspacing="0" class="wrapper">
+											<tr>
+												<td height="43"  class="button" mc:edit="btn_3" align="center" style="border: 2px solid #8080809e;font-family:Arial, sans-serif; font-size:16px; line-height:18px; color:#ffffff; border-radius:3px;" bgcolor="#d45656">
+												<a href="#" target="_blank" style="text-decoration:none; color:#15141485 ;" class="button">&nbsp;&nbsp;&nbsp;Product3 Deals &nbsp;&nbsp;&nbsp;</a>
+												</td>
+											</tr>
+											<tr>
+												<td height="28" class="fix_height">&nbsp;</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td width="45" class="hide">&nbsp;</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	
+	<table width="650" border="0" cellspacing="0" cellpadding="0" align="center" class="wrapper" mc:repeatable mc:variant="Header1">
+		<tr>
+			<td>
+				<table width="650" border="0" cellspacing="0" cellpadding="0" align="center" class="wrapper">
+					<tr>
+						<td width="0" class="hide">&nbsp;</td>
+						<td>
+							<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+								<tr>
+									<td height="25" class="fix_height">&nbsp;</td>
+								</tr>
+								<tr>
+									<td>
+										<table width="650" border="0" cellspacing="0" cellpadding="0" align="left" class="wrapper">
+											<tr>
+												<td class="black" mc:edit="text_h1" style="font-family:Arial, sans-serif; font-size:12px; line-height:15px; color:#333333;" align="left">
+												<span class="black">
+												    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+													dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+													book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It
+													was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+													desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of
+													the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+													an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+													centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+													the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+													Aldus PageMaker including versions of Lorem Ipsum. Link.
+												</span>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td height="25" class="fix_height">&nbsp;</td>
+								</tr>
+							</table>
+						</td>
+						<td width="30" class="hide">&nbsp;</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
